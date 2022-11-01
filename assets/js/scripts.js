@@ -16,19 +16,19 @@ document.addEventListener("DOMContentLoaded", async e => {
 
   refs.modal.addEventListener("click", () => refs.modal.classList.remove("open"));
 
-  // // STEP 1
-  // refs.step1.classList.add("fade-in");
-  // await timeout(3);
-  // refs.step1.classList.remove("fade-in");
-  // refs.step1.classList.add("fade-out-long");
-  // await timeout(4);
-  //
-  // // STEP 2
-  // refs.step2.classList.add("fade-in-long");
-  // await timeout(4);
-  // refs.step2.classList.remove("fade-in-long");
-  // refs.step2.classList.add("fade-out-long");
-  // await timeout(4);
+  // STEP 1
+  refs.step1.classList.add("fade-in");
+  await timeout(3);
+  refs.step1.classList.remove("fade-in");
+  refs.step1.classList.add("fade-out-long");
+  await timeout(4);
+
+  // STEP 2
+  refs.step2.classList.add("fade-in-long");
+  await timeout(4);
+  refs.step2.classList.remove("fade-in-long");
+  refs.step2.classList.add("fade-out-long");
+  await timeout(4);
 
   // HOME
   refs.welcome.classList.add("hidden");
