@@ -1,39 +1,128 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cardápio - Quilombo de Machadinha</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
   <body>
-    <img src="../assets/img/cardapio.jpeg" alt="Cardápio">
+    <div class="sidebar">
+      <div class="sidebar-inner">
+        <header>
+          <img class="logo" src="img/logo.png" alt="logo" itemprop="logo">
+          <h1>Restaurante</h1>
+          <div class="social">
+            <a class="icon" target="__blank" href="https://www.youtube.com/channel/UCu7qmUZSanbEQy0xagHRc8A">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a class="icon" target="__blank" href="https://www.facebook.com/quilombomachadinha/">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="icon" target="__blank" href="https://www.instagram.com/quilombomachadinha/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...</p>
+          <h2>Contato</h2>
+          <div class="contacts">
+            <a href="#">
+              <i class="fa-regular fa-envelope"></i>&nbsp;
+              email@email.com
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-phone"></i>&nbsp;
+              (22) 9xxxx-xxxx
+            </a>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <main>
+      <h1>Nosso cardápio</h1>
+      <div class="section">
+        <div class="text">
+          <div class="plate">
+            <p>Feijoada</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Feijão, couve, lombo, carne seca, pé e orelha de porco, linguiça, costelinha, laranja, banana e farofa.</p>
+          <div class="plate">
+            <p>Sopa de Leite</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Leite, farinha de mandioca e carne seca desfiada.</p>
+          <div class="plate">
+            <p>Mulato velho</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Feijão e abóbora das roças das famílias quilombolas com bagre pescado na Lagoa Feia.</p>
+          <div class="plate">
+            <p>Galinha com Aipim</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Galinha da roça e aipim.</p>
+          <div class="plate">
+            <p>Doce Ambrosia</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Leite coalhado e limão.</p>
+        </div>
+        <div class="img" style="background: url('img/image-1.png') no-repeat center; background-size: cover;"></div>
+      </div>
+
+      <div class="section">
+        <div class="text">
+          <div class="plate">
+            <p>Bolo Falso</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Farinha de mandioca, leite e queijo ralado.</p>
+          <div class="plate">
+            <p>Sanema</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Farinha de mandioca e coco.</p>
+          <div class="plate">
+            <p>Croquete de carne seca</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Carne seca desfiada e trigo</p>
+          <div class="plate">
+            <p>Bolinho de aipim com cebola</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Aipim, ovo, manteiga e cebola</p>
+          <div class="plate">
+            <p>Capitão de feijão</p>
+            <div class="dots"></div>
+            <p>R$ 20</p>
+          </div>
+          <p class="description">Bolinho de feijão, couve e farinha de mandioca.</p>
+        </div>
+        <div class="img left" style="background: url('img/image-2.jpeg') no-repeat center; background-size: cover;"></div>
+      </div>
+
+      <div class="section column">
+        <img src="img/image-3.jpeg" class="responsive"/>
+        <img src="img/image-4.jpeg" class="responsive"/>
+        <img src="img/image-5.png" class="responsive"/>
+        <img src="img/image-6.jpeg" class="responsive"/>
+        <img src="img/image-7.png" class="responsive"/>
+      </div>
+    </main>
   </body>
-
-  <style media="screen">
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      width: 100%;
-      height: 100%;
-      overflow-y: scroll;
-      padding: 0;
-      margin: 0;
-    }
-
-    body {
-      width: 100%;
-      height: auto;
-      padding: 0;
-      margin: 0;
-      overflow: hidden;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
 </html>
