@@ -34,6 +34,14 @@ button {
     background: rgba(255, 255, 255, 0.4);
   }
 
+.responsive {
+  width: 100%;
+  height: 100%;
+}
+.fit {
+  object-fit: contain;
+}
+
 .welcome {
   display: flex;
   flex-direction: column;
@@ -81,6 +89,25 @@ button {
     padding: 1rem;
     opacity: 0;
   }
+    .home nav h1 {
+      font-size: 1.6rem;
+    }
+    .home nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      margin-right: 2rem;
+    }
+      .home nav ul li a {
+        text-decoration: none;
+        font-size: 1.25rem;
+      }
+        .home nav ul li a:hover {
+          transform: scale(1.1);
+          color: white;
+        }
   .home article {
     width: 100%;
     height: 100%;
@@ -120,23 +147,30 @@ button {
         background: rgba(255, 255, 255, 0.2);
         opacity: 0;
         cursor: pointer;
+        background-size: cover;
+        background-position: center;
       }
-        .home article .cards .card:hover {
-          background: rgba(255, 255, 255, 0.4);
-        }
-
-        .home article .cards .card.open::after {
-          content: "";
+        .home article .cards .card footer {
           position: absolute;
-          top: 2rem;
-          bottom: 2rem;
-          right: 2rem;
-          left: 2rem;
-          max-width: calc(100% - 4rem);
-          background: #563333;
-          z-index: 99;
-          border-radius: 18px;
+          bottom: 0;
+          padding: 3rem 1rem 1rem 1rem;
+          background: rgb(255,255,255);
+          background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 50%);
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
         }
+          .home article .cards .card footer h3 {
+            margin: 0;
+            font-size: 1.45rem;
+            color: white;
+            opacity: 0.85;
+          }
+          .home article .cards .card footer p {
+            margin: 0;
+            font-size: 1rem;
+            /* opacity: 0.9; */
+          }
 
     .home .card-modal {
       opacity: 0;
@@ -222,6 +256,7 @@ button {
 }
 
 .circle {
+  position: relative;
   height: 1rem;
   width: 1rem;
   border-radius: 50%;

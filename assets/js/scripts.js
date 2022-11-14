@@ -1,4 +1,6 @@
-function timeout(time) {
+const TIME = 2.5;
+
+function timeout(time = TIME) {
   return new Promise(resolve => setTimeout(resolve, time * 1000));
 }
 
@@ -16,19 +18,19 @@ document.addEventListener("DOMContentLoaded", async e => {
 
   refs.modal.addEventListener("click", () => refs.modal.classList.remove("open"));
 
-  // STEP 1
-  refs.step1.classList.add("fade-in");
-  await timeout(3);
-  refs.step1.classList.remove("fade-in");
-  refs.step1.classList.add("fade-out-long");
-  await timeout(4);
-
-  // STEP 2
-  refs.step2.classList.add("fade-in-long");
-  await timeout(4);
-  refs.step2.classList.remove("fade-in-long");
-  refs.step2.classList.add("fade-out-long");
-  await timeout(4);
+  // // STEP 1
+  // refs.step1.classList.add("fade-in");
+  // await timeout();
+  // refs.step1.classList.remove("fade-in");
+  // refs.step1.classList.add("fade-out-long");
+  // await timeout();
+  //
+  // // STEP 2
+  // refs.step2.classList.add("fade-in-long");
+  // await timeout();
+  // refs.step2.classList.remove("fade-in-long");
+  // refs.step2.classList.add("fade-out-long");
+  // await timeout();
 
   // HOME
   refs.welcome.classList.add("hidden");
