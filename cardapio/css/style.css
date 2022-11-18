@@ -210,6 +210,13 @@ img.responsive {
   border-radius: 6px;
 }
 
+.description.small {
+  font-size: 0.8rem;
+  margin-top: -1rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+
 /* Tablet */
 
 @media (min-width: 481px) and (max-width: 1024px) {
