@@ -45,6 +45,8 @@ h3 {
       ),
       url("../img/sidebar.png");
     background-size: cover;
+    max-height: 100vh;
+    height: auto;
     top: 0;
     bottom: 0;
     text-align: center;
@@ -54,18 +56,24 @@ h3 {
 }
 
 .sidebar-inner {
-    padding: 8rem 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 header .logo {
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
     object-fit: contain;
     width: 100%;
     max-width: 8rem;
 }
 
 header h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 header .social {
@@ -101,8 +109,11 @@ header .location p {
 
 header .contacts {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
+
 
 header .contacts a {
     display: flex;
@@ -220,17 +231,8 @@ img.responsive {
 /* Tablet */
 
 @media (min-width: 481px) and (max-width: 1024px) {
-    .sidebar-inner {
-        padding: 50% 30px;
-    }
-
     header h1 {
         font-size: 1.8rem;
-    }
-
-    header .contacts {
-        flex-direction: column;
-        align-items: center;
     }
 
     main .section {
@@ -258,7 +260,7 @@ img.responsive {
     }
 
     .sidebar-inner {
-        padding: 50px 30px;
+        padding: 1rem
     }
 
     main {
@@ -271,15 +273,5 @@ img.responsive {
 
     main .img {
         display: none;
-    }
-}
-
-@media (max-width: 1024px) {
-    header .contacts {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 0.6rem;
     }
 }
